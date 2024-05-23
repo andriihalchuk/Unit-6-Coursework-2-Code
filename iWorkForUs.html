@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hot Beans Web</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="Logo">
+      <img src = "Images/CompanyLogo.png" alt = Logo width = "90" height ="65">
+    </div>
+    <div>
+      <h1 style = "font-size: 30;">Hot Beans Web</h1>
+    </div>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="iAboutUs.html">About Us</a>
+      <a href="iOurEmployees.html">Our employees</a>
+      <a href="iVacancies.html">Vacancies</a>
+      <a class="active" href="iWorkForUs.html">Work for us</a>
+      <a href="iCourses.html">Courses</a>
+    </div>
+  </header>
+</body>
+
+  
+<body>
+  <div>
+    <p style = "font-size: 20px;">
+      Welcome to the gateway of opportunity at Hot Beans Web! Our job application page is your ticket to join our dynamic team of web development wizards. Dive into a seamless experience where you can showcase your skills and passion for all things web. Join us in crafting the digital future, one hot bean at a time!
+    </p>
+    <br><br>
+  <div style = "padding-left: 27%">
+  <form class = "center" name="VacancyApplicationForm" action="iThankYou.html" method="get">
+
+      <p>
+          <label>* First Name:</label>
+          <!--input text box-->
+          <input type="text" id="fname" name="fname" />
+          <br />
+          <label id="fNameError" class="Error"></label>
+      </p>
+      <p>
+          <label>* Last Name:</label>
+          <!--input text box-->
+          <input type="text" id="sname" name="sname" />
+          <br />
+          <label id="sNameError" class="Error"></label>
+      </p>
+      <p>
+          <label>* Are you a UK resident?</label>
+          <!--input radio button group yes no-->
+          <input type="radio" id="ukResidentYes" name="ukResident" value="Yes"><label for="ukResidentYes">Yes</label>
+          <input type="radio" id="ukResidentNo" name="ukResident" value="No"><label for="ukResidentNo">No</label>
+          <br />
+          <label id="ukResidentError" class="Error"></label>
+      </p>
+      <p>
+          <label>* Telephone contact details</label>
+          <!--input text box-->
+          <input type="text" id="telNo" name="telNo" />
+          <br />
+          <label id="telNoError" class="Error"></label>
+      </p>
+
+      <p>
+          <label>* Please select the job you are applying for: </label>
+          <!--input text box-->
+      </p>
+      <p>
+          <select name="JobType" id="JobType">
+          </select>
+          <br />
+          <label id="JobTypeError"  class="Error"></label>
+      </p>
+
+      <p>
+          <label for="txtAnyOtherInfo">Please enter any other information to support your application:</label>
+      </p>
+      <p>
+          <!--input text area for free text entry-->
+          <textarea id="txtAnyOtherInfo" name="txtAnyOtherInfo" rows="5" cols="55"></textarea>
+
+      </p>
+
+      <p>
+          <!--button that on clicked runs the validation check javascript-->
+          <button onclick="return ValidateVacancyForm()">Apply Now</button>
+      </p>
+
+
+  </form>
+  <br><br><br>
+</div>
+  <div class="footer"></div>
+</body>
+</html>

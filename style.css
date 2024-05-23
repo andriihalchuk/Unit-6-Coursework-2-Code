@@ -1,0 +1,170 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body { background-color: #ffffff; }
+
+
+div{
+  display:block;
+  float: left;
+}
+
+header{
+  left: 0px;
+  top: 0px;
+  max-width: 100%;
+  position: sticky;
+  width: 100%;
+  font-family: 'trebuchet ms', sans-serif; 
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 32px 26px;
+  text-decoration: none;
+  font-size: 23px;
+  top: 200px;
+  font-family: 'trebuchet ms', sans-serif;
+  position: sticky;
+}
+
+.topnav a:hover {
+  background-color: #F5D2D2;
+  color:#781111FF;
+}
+.topnav a.active {
+color: #FF6347;
+}
+
+
+.container {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  
+}
+
+.img {
+  float: left;
+  padding-top: 15px;
+  border-top-right-radius: 3%;
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
+}
+.text {
+  font-size: 16px;
+  padding-left: 20px;
+  padding-top: 5px;
+  float: left;
+  font-family: 'trebuchet ms', sans-serif;
+  max-width: 50%;
+
+}
+
+image{
+  width: 600px;
+  max-width: 600px;
+}
+
+
+
+/***************** Style the footer******************* */
+.footer {
+  text-align: bottom;
+  margin-left: 50vh;
+  padding: 1%;
+  width: 100vh;
+  height: 10vh;
+  /**fix some images in the footer*/
+  background-image: url('Images/Copyright.jpg'), url('Images/Royal family.jpg'), url('Images/CompanyLogo.png');
+  background-position:  left,  center,  right;
+  background-size: contain, contain, contain;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+/* assign colours to text types */
+/* Make all text Arial */
+p { 
+  font-family: 'trebuchet ms', sans-serif; 
+  color: #712B1F;
+}
+
+a {
+  color: #ff5757;
+}
+
+strong {
+    color: #FF6347;
+}
+em {
+  color: #FF9684;
+}
+
+
+.imag {
+  float: left;
+  padding-top: 15px;
+  border-top-right-radius: 3%;
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
+  max-width: 100%;
+}
+
+.txt {
+  font-size: 16px;
+  padding-left: 20px;
+  padding-top: 5px;
+  float: left;
+  font-family: 'trebuchet ms', sans-serif;
+  max-width: 160%;
+
+}
+
+/* creates two column layout with two text columns */
+.two-column-layout { 
+  display: grid;               
+  grid-template-columns: 1fr 4fr;   
+  grid-gap: 20px;            
+  font-size: 16px; 
+  line-height: 1.5; 
+} 
+
+.two-column-layout1 { 
+  display: grid;               
+  grid-template-columns: 4fr 1fr;   
+  grid-gap: 20px;            
+  font-size: 16px; 
+  line-height: 1.5; 
+} 
+
+
+/* center a div */
+.center {
+  border: 3px solid;
+  margin: 0 auto;
+  width:auto;
+  padding: 20px;
+}
+
+/* makes a lables in form bold*/
+label {
+    font-weight: bold;
+}
+
+/* display text in red when user entered invalid input into a form*/
+.Error{
+    color:red;
+    font-weight:normal;
+}
+
+
